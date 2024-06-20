@@ -1,155 +1,34 @@
 ---
 layout: default
 ---
+ 
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+### Hey there
+As a recent graduate with a Master's degree in Cybersecurity from the University of Maryland, I am eager to apply my skills and knowledge in a challenging role. My passion lies in penetration testing, reverse engineering, and binary exploitation. I am dedicated to identifying and mitigating security vulnerabilities, ensuring robust defense mechanisms for digital assets. With a strong foundation in cybersecurity principles and hands-on experience gained through academic projects and capture the flag events.
 
-[Link to another page](./writeups.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-<pre 
-  class="command-line" 
-  data-prompt="kali@kali $" 
-  data-output="4"
-><code class="language-bash"># Bash script with shell
-echo "flag{i_4m_a_f14g}" > flag.txt
-cat flag.txt
-flag{i_4m_a_f14g}
-rm flag.txt</code>
-</pre> 
-
-<pre class="line-numbers" 
-  data-start="1" 
-  data-line="6-7"
-><code class="language-dart">// Dart code with line numbers
-// Line 6 and 7 are highlighted
-
-import 'dart:ui';
-
-import 'package:shared_preferences_web/shared_preferences_web.dart';
-import 'package:url_launcher_web/url_launcher_web.dart';
-
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-
-// ignore: public_member_api_docs
-void registerPlugins(PluginRegistry registry) {
-  SharedPreferencesPlugin.registerWith(registry.registrarFor(SharedPreferencesPlugin));
-  UrlLauncherPlugin.registerWith(registry.registrarFor(UrlLauncherPlugin));
-  registry.registerMessageHandler();
-}</code></pre>
+For my fellow hackers, everything I have learned and continue to learn comes from the incredible community of highly skilled cybersecurity experts. I am committed to giving back to this community to the best of my ability. Any feedback on writeups would be much appreciated.
 
 
-#### Header 4
+## Education
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+- Master of Engineering in Cybersecurity, University of Maryland, College Park (2022-2024)
+  - Coursework:
+    - Advanced Hacking of Linux and Embedded Systems
+    - Penetration Testing 
+    - Reverse Software Engineering  
+    - Secure Software Testing and Construction
+    - Digital Forensics and Incidence Responses
 
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+- Bachelor of Technology in Computer Engineering, Gujarat, India (2018-2022)
 
 
-### Definition lists can be used with HTML syntax.
+## Certifications
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+### CompTIA Security+ 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6a14c172-7ac4-41fa-818e-1b32d23e5937" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+[Octocat](https://images.credly.com/size/340x340/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png)
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+### Burp Suite Certified Profesional - BSCP [`PREPARING`]
+### Offensive Security Certified Profesional - OSCP [`PREPARING]`
 
-```
-The final element.
-```
+

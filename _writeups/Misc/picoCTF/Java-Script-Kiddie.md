@@ -7,9 +7,10 @@ solves: 1167
 tags: web picoCTF
 date: 2024-06-19
 comments: true
+misc: true
 ---
 
-### Java Script analysis
+### Java Script analysis:
 
 The initial index page consists of javascript code used to decrypt the image file coming from the server in decimal. We need a key of length 16 to decrypt the image.
 
@@ -56,6 +57,7 @@ for(var i = 0; i < LEN; i++){
 }
 ```
 
+
 If you notice the following snippet, it takes 16-byte blocks from the image data and performs shifting operations based on key. The blocks are created as follows.
  
 ![Branching](/assets/CTFs/picoCTF/java-script-kiddie1.png)
@@ -63,7 +65,7 @@ If you notice the following snippet, it takes 16-byte blocks from the image data
 Bruteforcing the key of size 16 is not feasible but we know that it's a PNG file and the first 16 bytes of a PNG file stay the same for every image. So we only have to brute force the first 16 bytes. 
 
 
-Initial 16 bytes are the following `8950 4e47 0d0a 1a0a 0000 000d 4948 4452`
+Initial 16 bytes of any PNG file are the following `8950 4e47 0d0a 1a0a 0000 000d 4948 4452`.
 ```shell
 ┌──(kali㉿kali)-[~/Downloads]
 └─$ xxd download.png 
@@ -75,7 +77,9 @@ Initial 16 bytes are the following `8950 4e47 0d0a 1a0a 0000 000d 4948 4452`
 
 ```
 
-### Undestading decryption code for first 16 bytes block 
+
+
+### Undestading decryption code for first 16 bytes block: 
 * Iterate from ascii values 48 to 57 which are 0 to 9 in decimal
 * Check if the `result[0]=png_bytes[0]`
 * Repeat the process for all 16 bytes
@@ -126,6 +130,7 @@ Position: 15 Char: 3 Res:82
 Key: 6696705967835463
 
 ```
+
 
 We get a QR code after submitting the code.
 ![Branching](/assets/CTFs/picoCTF/java-script-kiddie1.png)

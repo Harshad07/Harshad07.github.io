@@ -7,20 +7,15 @@ layout: default
 
 As a recent graduate with a Master's degree in Cybersecurity from the University of Maryland, I am eager to apply my skills and knowledge in a challenging role. My passion lies in penetration testing, reverse engineering, and binary exploitation. With a strong foundation in cybersecurity principles and hands-on experience gained through academic projects and capture the flag events. I am dedicated to identifying and mitigating security vulnerabilities, ensuring robust defense mechanisms for digital assets. Feel free to check out my [resume here](https://flowcv.com/resume/41nrtrvnbl).
 
-<br>
 
 Currently, I am working on a DevSecOps project focusing on robust security integration into CI/CD pipelines. I am planning to implement Static Application Security Testing (SAST), secret scanning, Software Composition Analysis (SCA), Dynamic Application Security Testing (DAST), and image scanning, under the integration part and extend it with proper vulnerability assessment and management based on results so security teams and developers can easily decide on what issue to solve.   
 
-<br>
 
 For my fellow hackers, everything I have learned and continue to learn comes from the incredible community of highly skilled cybersecurity experts. I am committed to giving back to this community to the best of my ability. Any feedback on writeups would be much appreciated.
 
-<br>
 
 Feel free to check out my [Writeups](./writeups.html) for some of the recent CTF challenges I solved.
 
-<br>
-<br>
 
 ## Education:
 
@@ -32,12 +27,10 @@ Feel free to check out my [Writeups](./writeups.html) for some of the recent CTF
     - Secure Software Testing and Construction
     - Digital Forensics and Incidence Responses
 
-<br>
-
+\
 - **Bachelor of Technology in Computer Engineering**, Gujarat, India (2018-2022)
 
-<br>
-<br>
+\
 
 ## Certifications:
 

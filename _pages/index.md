@@ -27,10 +27,10 @@ Feel free to check out my [Writeups](./writeups.html) for some of the recent CTF
     - Secure Software Testing and Construction
     - Digital Forensics and Incidence Responses
 
-\
+\\
 - **Bachelor of Technology in Computer Engineering**, Gujarat, India (2018-2022)
 
-\
+\\
 
 ## Certifications:
 
